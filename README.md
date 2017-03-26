@@ -16,7 +16,7 @@
 
    * 기존 Mecab 관련 은전한닢 프로젝트의 내용을 정리하였다
 	
-   Link : (https://github.com/couplewith/elasticsearch_korean_analyizer/blob/master/README.install_mecab-ko-dic)
+   Link : (https://github.com/couplewith/elasticsearch_korean_analyizer/blob/master/README.install_mecab-ko-dic.md)
 
 
 ## 2) install_plugin_korean_analyze 설치에 관련된 문서이다.
@@ -27,7 +27,7 @@
     *  그리고 외부 플러그인을 위해 LD_LIBRARY_PATH 에러나 java path 에러에 대한 
       대응 방법도 기술하였다.	  
   
-   Link (https://github.com/couplewith/elasticsearch_korean_analyizer/blob/master/README.install_plugin_korean_analyze)
+   Link (https://github.com/couplewith/elasticsearch_korean_analyizer/blob/master/README.install_plugin_korean_analyze.md)
    
 
 
@@ -38,4 +38,4 @@
 	종종 다양한 환경 테스트를 위해서 하나의 파일을 가지고 수정하는 데는 불편하거나 안되는 것들이 생겨난다.
 	그래서 구동 관련되 스크립트 들을 수정하여 여러가지 환경을 사용하기 위해 필요한 내용을 정리하였다.
   
-   Link : (https://github.com/couplewith/elasticsearch_korean_analyizer/blob/master/README.3.multi_elastic_configuration)
+   Link : (https://github.com/couplewith/elasticsearch_korean_analyizer/blob/master/README.3.multi_elastic_configuration.md)
