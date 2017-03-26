@@ -53,28 +53,28 @@
 
 #### * 3)plugin-descriptor.properties 파일을 수정합니다.
 	   
-	 
+	* 아래와 같이 plugin-descriptor.properties를 버전에 맞게 수정합니다.
+	 필요에 따라 플러그인 이름도 수정이 가능합니다.(설정하다보면 길긴하군요) 
+
 <pre><code>
   # 수정할 부분은 아래 부분입니다. (plugin-descriptor.properties)
-	 # 'version': plugin's version
-	 version=5.2.1
-	 #
-	 # 'name': the plugin name
-	 name=elasticsearch-analysis-mecab-ko
+	# 'version': plugin's version
+	version=5.2.1
+	#
+	# 'name': the plugin name
+	name=elasticsearch-analysis-mecab-ko
+	
+	java.version=1.8
 
-	 java.version=1.8
-
-	 # plugins with the incorrect elasticsearch.version.
-	 elasticsearch.version=5.2.1
+	# plugins with the incorrect elasticsearch.version.
+	elasticsearch.version=5.2.1
 </code></pre>
 
-	* 버전에 맞게 수정하고 설치되는 플러거인 이름도 수정이 가능합니다.	
-    * 만약 자바버전이 향후 1.9라면 1.9에서 가져온 앞의 1.1) ~ 4) 번의 파일을 재컴파일 하면 될것 같습니다.
 
 
 
-#### * 4) zip 명령으로 elasticsearch 폴더를 압축하고 elasticsearch-analysis-mecab-ko-5.2.1.zip 
-	   과 같이 해당 버전에 맞게 수정하면 되겠습니다.
+#### * 4) zip 명령으로 elasticsearch 폴더를 zip으로 압축합니다. 
+       파일명은  elasticsearch-analysis-mecab-ko-5.2.1.zip와 같이 해당 버전에 맞게 수정하면 되겠습니다.
 
 <pre><code>	
 	[root@localhost mecab_src]# unzip -l  elasticsearch-analysis-mecab-ko-5.2.1.zip
