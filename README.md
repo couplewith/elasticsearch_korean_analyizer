@@ -31,10 +31,11 @@
    
 
 
-## 3. README.3.multi_elastic_engine 는 여러개의 Elastic Search 엔진을 쓰기 위한 트릭이다.
+## 3. Elasticsearch 설정하기
 
-    *  elasticsearch 구동을 위한 기본 파일은 /etc/elasticsearch 아래 위치한다.
-    * 다양한 환경 테스트를 위해서 하나의 파일을 가지고 수정하는 데는 불편하거나 안되는 것들이 생겨난다.
-     그래서 구동 관련되 스크립트 들을 수정하여 다양하게 사용하기 위해 필요한 내용을 정리하였다.
+	* README.3.multi_elastic_configuration는 여러개의 Elastic Search 엔진을 쓰기 위한 트릭을 중심으로 작성했다.
+	elasticsearch 구동을 위한 기본 파일은 /etc/elasticsearch 아래 하나의 elasticsearch.yml 환경 파일을 사용한다.
+	종종 다양한 환경 테스트를 위해서 하나의 파일을 가지고 수정하는 데는 불편하거나 안되는 것들이 생겨난다.
+	그래서 구동 관련되 스크립트 들을 수정하여 여러가지 환경을 사용하기 위해 필요한 내용을 정리하였다.
   
-   Link : (https://github.com/couplewith/elasticsearch_korean_analyizer/blob/master/README.3.multi_elastic_engine)
+   Link : (https://github.com/couplewith/elasticsearch_korean_analyizer/blob/master/README.3.multi_elastic_configuration)
