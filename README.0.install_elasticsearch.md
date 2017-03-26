@@ -27,6 +27,6 @@
     
    * 환경 설정 내용은 아래 파일을 찾아 보기 바랍니다.
 	
-	참조 : README.3.multi_elastic_engine_install
+	참조 : README.3.multi_elastic_engine_install.md
    
-   Link : (https://github.com/couplewith/elasticsearch_korean_analyizer/blob/master/README.3.multi_elastic_engine)
+   Link : (https://github.com/couplewith/elasticsearch_korean_analyizer/blob/master/README.3.multi_elastic_engine.md)
