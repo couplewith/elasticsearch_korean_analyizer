@@ -59,7 +59,7 @@
 <pre><code>
   # 수정할 부분은 아래 부분입니다. (plugin-descriptor.properties)
 	# 'version': plugin's version
-	version=5.2.1
+	version=5.2.2
 	#
 	# 'name': the plugin name
 	name=elasticsearch-analysis-mecab-ko
@@ -67,29 +67,38 @@
 	java.version=1.8
 
 	# plugins with the incorrect elasticsearch.version.
-	elasticsearch.version=5.2.1
+	elasticsearch.version=5.2.2
 </code></pre>
 
 
 
 
 #### * 4) zip 명령으로 elasticsearch 폴더를 zip으로 압축합니다. 
-       파일명은  elasticsearch-analysis-mecab-ko-5.2.1.zip와 같이 해당 버전에 맞게 수정하면 되겠습니다.
+       파일명은  elasticsearch-analysis-mecab-ko-5.2.2.zip와 같이 해당 버전에 맞게 수정하면 되겠습니다.
 
 <pre><code>	
-	[root@localhost mecab_src]# unzip -l  elasticsearch-analysis-mecab-ko-5.2.1.zip
-	Archive:  elasticsearch-analysis-mecab-ko-5.2.1.zip
-	  Length      Date    Time    Name
-	---------  ---------- -----   ----
-		 8399  12-25-2016 01:49   elasticsearch/elasticsearch-analysis-mecab-ko-5.2.1.jar
-		12775  02-09-2015 20:18   elasticsearch/mecab-java-0.996.jar
-		37680  12-25-2016 01:49   elasticsearch/mecab-ko-lucene-analyzer-0.21.0.jar
-		 3478  12-25-2016 01:49   elasticsearch/mecab-ko-mecab-loader-0.21.0.jar
-		 2736  03-12-2017 20:17   elasticsearch/plugin-descriptor.properties
-		   73  12-25-2016 01:49   elasticsearch/plugin-security.policy
-	---------                     -------
-		65141                     6 files
+*[root@localhost mecab_src]# zip -r elasticsearch-analysis-mecab-ko-5.2.2.zip elasticsearch/*
+  adding: elasticsearch/elasticsearch-analysis-mecab-ko-5.2.2.jar (deflated 5%)
+  adding: elasticsearch/mecab-java-0.996.jar (deflated 9%)
+  adding: elasticsearch/mecab-ko-lucene-analyzer-0.21.0.jar (deflated 16%)
+  adding: elasticsearch/mecab-ko-mecab-loader-0.21.0.jar (deflated 37%)
+  adding: elasticsearch/plugin-descriptor.properties (deflated 61%)
+  adding: elasticsearch/plugin-security.policy (deflated 8%)
+  
+*[root@localhost mecab_src]# unzip -l  elasticsearch-analysis-mecab-ko-5.2.2.zip
+Archive:  elasticsearch-analysis-mecab-ko-5.2.2.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+    55919  03-26-2017 19:18   elasticsearch/elasticsearch-analysis-mecab-ko-5.2.2.jar
+    12775  02-09-2015 20:18   elasticsearch/mecab-java-0.996.jar
+    37680  12-25-2016 01:49   elasticsearch/mecab-ko-lucene-analyzer-0.21.0.jar
+     3478  12-25-2016 01:49   elasticsearch/mecab-ko-mecab-loader-0.21.0.jar
+     2736  03-26-2017 19:15   elasticsearch/plugin-descriptor.properties
+       73  12-25-2016 01:49   elasticsearch/plugin-security.policy
+---------                     -------
+   112661                     6 files
 </code></pre>	
+
 
 
 # 3. Install mecab-ko-lucene-analyzer plugin	  
