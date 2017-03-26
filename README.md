@@ -24,9 +24,9 @@
    Link : (https://github.com/couplewith/elasticsearch_korean_analyizer/blob/master/README.1.install_mecab-ko-dic.md)
 
 
-## 2) install_plugin_korean_analyze 설치에 관련된 문서이다.
+## 2)  플러그인 설치에 관련된 문서 (install_plugin_korean_analyze)
 
-    - 플러그인 만들기와 버전이 업그레이트 안된 상태의 파일을 가지고 
+    - 플러그인 만들기와 버전이 업그레이드 안된 상태의 플러그인 파일을 가지고 임시 업그레이드하기
     *  업그레이드 된 elasticsearch 플러그인으로 만들거나 
     *  오프라인으로 플러그인 파일을 설치하는 내용을 정리하였다.
     *  그리고 외부 플러그인을 위해 LD_LIBRARY_PATH 에러나 java path 에러에 대한 
