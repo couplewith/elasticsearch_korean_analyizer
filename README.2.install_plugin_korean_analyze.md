@@ -177,7 +177,13 @@ Archive:  elasticsearch-analysis-mecab-ko-5.2.2.zip
 	   -Djava.library.path=/usr/local/lib
 </code></pre>	   
 
-
+#### 4) elasticsearch 재시작후 PS 확인 
+ 
+    * 설정후 ps 정보를 확인하면 해당 옵션이 추가된 것을 확인 할수 있습니다.
+	
+<pre><code>
+elastic+ 20773     1  7 11:42 ?        00:34:54 /etc/alternatives/java_sdk_1.8.0/bin/java -Xms2g -Xmx2g -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -server -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djdk.io.permissionsUseCanonicalPath=true -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j.skipJansi=true -XX:+HeapDumpOnOutOfMemoryError -Djava.library.path=/usr/local/lib -Des.path.home=/usr/share/elasticsearch -cp /usr/share/elasticsearch/lib/elasticsearch-5.2.1.jar:/usr/share/elasticsearch/lib/* org.elasticsearch.bootstrap.Elasticsearch -p /var/run/elasticsearch/elasticsearch.pid --quiet -Edefault.path.logs=/data/ES_DATA/logs -Edefault.path.data=/data/ES_DATA/esdata1 -Edefault.path.conf=/etc/elasticsearch/single5
+</code></pre>
   
 # 5. elastic search  기동하기
 
