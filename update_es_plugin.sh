@@ -14,7 +14,7 @@ done
 
 # kibana plug-in 추가
 cd /usr/share/elasticsearch/
-bin/kibana-plugin install x-
+bin/kibana-plugin install x-pack
 
 # logstash plug-in 추가
 cd /usr/share/logstash/
