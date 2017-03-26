@@ -42,4 +42,61 @@
      * /usr/lib/sysctl.d/elasticsearch.conf     (신경쓰지 않음)
 
 
+2장. 환경 파일 설정하기
+   
+    앞에서 설명한 파일의 내용을 정리하면 다음과 같다.
+    예시적인 파일들을 잘 보기 바랍니다.
+	
+	
+	[/etc/elasticsearch/single5/elasticsearch.yml]
+<code>	
+	
+####### Elasticsearch Configuration Example ########
+cluster.name: esvm
+####### Node                      ##################
+node.name: esvm-node1
+node.master: true
+node.data: true
+#
+####### Index                         ################
+index.store.type: niofs
+#index.number_of_shards: 5
+#index.number_of_replicas: 1
+#----------------------------------
+# for single node
+#index.number_of_replicas: 1
+# for multi node
+#index.number_of_replicas: 2
+indices.store.throttle.type: merge
+indices.store.throttle.max_bytes_per_sec : 5mb
+# ----------------------------------- Paths ------------------------------------
+path.conf :    /etc/elasticsearch/single5
+path.scripts : /etc/elasticsearch/scripts
+path.data :    /data/ES_DATA/esdata1
+path.logs :    /data/ES_DATA/logs
+# ----------------------------------- Memory -----------------------------------
+##bootstrap.mlockall: true
+#
+# ---------------------------------- Network -----------------------------------
+#network.publish_host: _br0:ipv4_
+#network.host:         _br0:ipv4_
+#network.host: 192.168.56.101
+
+network.host: 0.0.0.0
+http.port:    9200
+http.max_content_length: 1024mb
+transport.tcp.compress : true
+
+#transport.tcp.port : 9306
+
+# http.cors.allow-origin: "/.*/"
+http.cors.allow-origin: /http://192.168.56.*/
+http.cors.enabled : true
+http.detailed_errors.enabled : true
+
+# ---------------------------------- x-pack  -----------------------------------
+xpack.security.enabled : false
+
+</code>
+
    
