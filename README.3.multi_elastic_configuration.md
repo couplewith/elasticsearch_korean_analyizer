@@ -1,5 +1,6 @@
 ## 
 #  elasticsearch multiple install
+#  * 한 서버에 여러개의 ElasticSearch 데몬을 띄우기 위한 방법
 ###
 
 * Systemd 를 통해서 elasticsearch의 환경을 다르게 설치하고 테스트 하는 경우가 필요하다.
